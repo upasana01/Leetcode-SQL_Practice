@@ -1,3 +1,9 @@
+
+select p.firstName, p.lastName, a.city, a.state
+from Person p LEFT JOIN Address a
+On p.personId = a.personId
+
+
 "SQL Schema
 Pandas Schema
 Table: Person
@@ -22,7 +28,7 @@ Table: Address
 | personId    | int     |
 | city        | varchar |
 | state       | varchar |
-+-------------+---------+"
++-------------+---------+
 addressId is the primary key (column with unique values) for this table.
-Each row of this table contains information about the city and state of one person with ID = PersonId.
+Each row of this table contains information about the city and state of one person with ID = PersonId."
  
